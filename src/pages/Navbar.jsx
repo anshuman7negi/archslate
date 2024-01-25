@@ -6,7 +6,7 @@ import profile from '../assets/profile-picture.png'
 
 const Navbar = () => {
     return (
-        <ul className="flex items-center justify-between px-12 py-2 shadow-md">
+        <ul className="sticky top-0 bg-white flex items-center justify-between px-12 py-2 shadow-md z-20">
             <li className='flex gap-4 items-center'>
                 <img src={logo} alt="logo" />
                 <h1>Archslate</h1>

@@ -1,4 +1,6 @@
+import ActivityCard from "../components/ActivityCard";
 import DocumentCard from "../components/DocumentCard";
+import PostCard from "../components/PostCard";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
@@ -7,6 +9,8 @@ const Projects = () => {
             <h1 className="text-3xl">New York High Rise / Task</h1>
             <ProjectCard />
             <DocumentCard />
+            <PostCard/>
+            <ActivityCard/>
         </div>
     )
 }

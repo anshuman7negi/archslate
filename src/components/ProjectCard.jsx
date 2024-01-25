@@ -6,17 +6,17 @@ const ProjectCard = () => {
             <div className="flex justify-between">
                 <h2 className="font-bold text-2xl">Create Architectural Concepts</h2>
                 <div className="flex gap-4">
-                    <button className="bg-black text-white px-6 py-1 rounded-full">Edit Task</button>
-                    <button className="border-black border-2 px-6 py-1 rounded-full">End Task</button>
+                    <button className="border-black border-2 hover:text-white px-6 py-1 rounded-full font-medium text-lg hover:bg-[#0F1420]">Edit Task</button>
+                    <button className="border-black border-2 hover:text-white px-6 py-1 rounded-full font-medium text-lg hover:bg-[#0F1420]">End Task</button>
                 </div>
             </div>
-            <div className="flex">
+            <div className="flex gap-16">
                 <ul className="flex flex-col gap-3 min-w-[300px]">
                     <li>
-                        <span className="font-bold mr-3">Assigned to:</span> <a href="">Brian Jenek</a>
+                        <span className="font-bold mr-3">Assigned to:</span> <a href="" className="font-bold text-lg text-[#494BAA] underline">Brian Jenek</a>
                     </li>
                     <li>
-                        <span className="font-bold mr-3">Assigned by:</span> <a href="">Brian Jenek</a>
+                        <span className="font-bold mr-3">Assigned by:</span> <a href="" className="font-bold text-lg text-[#494BAA] underline">Suzette Goldstein</a>
                     </li>
                     <li>
                         <span className="font-bold mr-3">Due Date:</span> 11/03/2023
