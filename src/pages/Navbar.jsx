@@ -7,7 +7,7 @@ import profile from '../assets/profile-picture.png'
 const Navbar = () => {
     return (
         <ul className="sticky top-0 bg-white flex items-center justify-between px-12 py-2 shadow-md z-20">
-            <li className='flex gap-4 items-center'>
+            <li className='flex gap-4 items-center font-semibold text-3xl'>
                 <img src={logo} alt="logo" />
                 <h1>Archslate</h1>
             </li>
@@ -21,12 +21,12 @@ const Navbar = () => {
                 <img src={bell} alt="bell icon" />
                 <img src={profile} alt="profile" className="w-9 h-9 rounded-full" />
                 <span>
-                    <h3>
+                    <h3 className="font-medium text-base">
                         Suzette Goldstein
                     </h3>
-                    <p>Admin</p>
+                    <p className="font-medium">Admin</p>
                 </span>
-                <img src={arrow} alt="drop arrow" />
+                <img src={arrow} alt="drop arrow" className="self-start mt-2" />
             </li>
         </ul>
     )

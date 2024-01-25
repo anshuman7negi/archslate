@@ -1,5 +1,14 @@
+import { useState } from "react";
 
 const PostCard = () => {
+
+    const [activity,setActivity] = useState([
+        {
+            description: "Marked this task In Progress",
+            status: "In Progress"
+        }
+    ])
+    
     return (
         <section className="flex bg-white rounded-lg p-6 gap-24">
             <div className="flex flex-col gap-6 w-2/3">
@@ -8,7 +17,7 @@ const PostCard = () => {
                 </p>
                 <textarea name="post" cols="20" rows="8"
                     className="border-2 rounded-md border-[#E5E5E5]"></textarea>
-                <button className="mx-auto bg-[#87898f] px-8 py-1 rounded-full text-white font-medium hover:bg-[#D7FEF0] hover:border-[#21CEAF]">
+                <button className="mx-auto bg-[#87898f] px-8 py-1 rounded-full text-white font-medium hover:bg-[#0F1420]">
                 Post Update
                 </button>
             </div>
