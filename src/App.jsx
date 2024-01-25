@@ -1,10 +1,16 @@
-import './App.css'
+import VerticalNavbar from './components/VerticalNavbar'
+import Navbar from './pages/Navbar'
+import Projects from './pages/Projects'
 
 function App() {
 
   return (
     <>
-      <h1>hello</h1>
+      <Navbar />
+      <div className='flex'>
+        <VerticalNavbar />
+        <Projects />
+      </div>
     </>
   )
 }
