@@ -1,6 +1,8 @@
 import React from 'react';
 import arrow from '../assets/drop-arrow.svg';
 import attachicon from  '../assets/attachfile.svg'
+import profile from '../assets/profile-picture.png'
+import documenticon from '../assets/document-icon.svg'
 
 const DocumentCard = () => {
     return (
@@ -27,13 +29,15 @@ const DocumentCard = () => {
                 </thead>
 
                 <tbody>
-                    <tr className="border-2">
-                        <td className="flex items-center gap-2 ml-2">
-                            <img src={arrow} alt="" />
+                    <tr className="border-2 font-normal text-base text-[#0F1420]">
+                        <td className="flex items-center gap-2 ml-2 my-1">
+                            <div className="bg-[#5578f4] rounded-sm">
+                            <img src={documenticon} alt="document icon" />
+                            </div>
                             Architectural Concepts Draft 1
                         </td>
                         <td>
-                            <img src={arrow} alt="" />
+                            <img src={profile} alt="profile" className="w-7 h-7 rounded-full my-1" />
                         </td>
                         <td className="text-center">08/27/2023</td>
                         <td className="text-center">2 MB</td>
