@@ -2,7 +2,7 @@ import logo from '../assets/logo.svg'
 import search from '../assets/search.svg'
 import bell from '../assets/bell.svg'
 import arrow from '../assets/drop-arrow.svg'
-import profile from '../assets/profile-picture.png'
+import profile from '../assets/profile.svg'
 
 const Navbar = () => {
     return (

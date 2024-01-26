@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import arrow from '../assets/drop-arrow.svg';
 import attachicon from '../assets/attachfile.svg'
-import profile from '../assets/profile-picture.png'
+import profile from '../assets/profile.svg'
 import documenticon from '../assets/document-icon.svg'
 
 const DocumentCard = () => {
@@ -54,7 +54,7 @@ const DocumentCard = () => {
 
 
     return (
-        <section className="flex flex-col bg-white rounded-lg p-6 gap-4 relative">
+        <section className="flex flex-col bg-white rounded-lg p-6 gap-4 z-0">
             <h3 className="font-bold">Documents:</h3>
             <table className="w-full">
                 <thead>

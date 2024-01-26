@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { addTask } from '../redux/taskSlice';
+import '../index.css';
 
 const TaskForm = () => {
 
@@ -17,6 +18,8 @@ const TaskForm = () => {
         priority: task.priority || '',
         description: task.description || '',
         project: task.project || '',
+        activity: task.activity,
+        status: task.status,
         view: task.view || [],
     });
 
@@ -85,7 +88,7 @@ const TaskForm = () => {
                                 formData.assign.map((assign, index) => (
                                     <p className="flex gap-2 py-1 px-5 border-2 rounded-full border-[#0F1420]" key={index}>
                                         {assign}
-                                        <span>X</span>
+                                        <span className='text-red-600 font-bold'>X</span>
                                     </p>
                                 ))
                             }
@@ -101,7 +104,11 @@ const TaskForm = () => {
 
                     <div className="flex flex-col gap-2 w-full">
                         <label htmlFor="Assign" className="font-medium text-xl">Priority</label>
-                        <input type="text" name="priority" value={formData.priority} onChange={handleInputChange} className="border-2 py-1 px-2 rounded-lg font-normal text-lg" />
+                        <select name="priority" value={formData.priority} onChange={handleInputChange} className="border-2 py-1 px-2 rounded-lg font-normal text-lg">
+                            <option >Hard</option>
+                            <option >Easy</option>
+                            <option >Medium</option>
+                        </select>
                     </div>
                 </div>
 
@@ -109,10 +116,10 @@ const TaskForm = () => {
                     <div className="flex flex-col gap-2 w-full">
                         <label htmlFor="title" className="font-medium text-xl">Is this goal attached to a project?</label>
                         <select value={formData.project} name="project" onChange={handleInputChange} className="border-2 py-1 px-2 rounded-lg font-normal text-lg">
-                            <option >New York High Rise</option>
-                            <option >Saab</option>
-                            <option >Opel</option>
-                            <option >Audi</option>
+                            <option className="hover:bg-black hover:text-white">New York High Rise</option>
+                            <option >22nd St</option>
+                            <option >38th St</option>
+                            <option >Not attached to a project</option>
                         </select>
                     </div>
 
