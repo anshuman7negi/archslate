@@ -5,6 +5,7 @@ import Navbar from './pages/Navbar';
 import Projects from './pages/Projects';
 import Task from './pages/Task';
 
+
 function App() {
   return (
     <>
