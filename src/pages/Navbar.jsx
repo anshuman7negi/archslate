@@ -9,7 +9,7 @@ const Navbar = () => {
         <ul className="sticky top-0 bg-white flex items-center justify-between px-12 py-2 shadow-md z-20">
             <li className='flex gap-4 items-center font-semibold text-3xl'>
                 <img src={logo} alt="logo" />
-                <h1>Archslate</h1>
+                <h1 className="logo">Archslate</h1>
             </li>
 
             <li className="flex gap-4 items-center border-2 w-[40%] p-1 px-8 rounded-full bg-[#EEF0F3]">
