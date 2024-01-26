@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+}
+
 
 .verticlanavabar li:hover img{
     filter: invert(100%);
